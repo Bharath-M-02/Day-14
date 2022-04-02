@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: #1b1c1d;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 5%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 0px 10px;
+  list-style: none;
+  position: relative;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: rgb(183, 183, 183);
+}
+
+.nav-links ul li a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #fff;
+  display: block;
+  margin: auto;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 80px;
+}
+
+.text-box p {
+  margin: 20px 0px;
+  font-size: 20px;
+  color: rgb(183, 183, 183);
+}
+
+.author-details {
+  width: 80%;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  margin: 5%;
+}
+
+.learn-more {
+  background-color: #e0e1e2;
+  font-weight: 600;
+}
+
+.videos {
+  background-color: #db2828;
+  color: white;
+  font-weight: 600;
+}
+
+.books {
+  background-color: #f2711c;
+  color: white;
+  font-weight: 600;
+}
+
+.fa {
+  padding: 0px 5px;
+}
+
+.quote {
+  background: #1b1c1d;
+  color: white;
+  padding: 50px 0px;
+  margin-top: 100px;
+}
+
+.awards {
+  padding-top: 100px;
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.award-title {
+  padding-top: 50px;
+  display: flex;
+}
+
+.award-card {
+  width: 60%;
+  margin: auto;
+  flex-basis: 22%;
+  height: 120px;
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.award-card span {
+  font-size: 12px;
+}
+
+.award-card p {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+@media (max-width: 700px) {
+  .award-title {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .award-card {
+    width: 60%;
+    margin: auto;
+    border: 0.5px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+  }
+}
+
+.poetry-poems {
+  padding-top: 100px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.poetry,
+.poems {
+  flex-basis: 70%;
+}
+
+.poetry h2,
+.poems h2 {
+  padding-bottom: 50px;
+}
+
+.poetry ul li,
+.poems ul li {
+  font-size: 14px;
+}
+
+.footer {
+  padding: 50px;
+  margin: auto;
+  background-color: #1b1c1d;
+  color: #fff;
+  display: flex;
+}
+
+.footer p {
+  font-size: 12px;
+}
+
+.about-author {
+  flex-basis: 33%;
+  margin: auto;
+  text-align: left;
+}
+
+.tech-used {
+  flex-basis: 10%;
+  margin: auto;
+  text-align: left;
+}
+
+.content-disc {
+  flex-basis: 33%;
+  margin: auto;
+  text-align: left;
+}
+
+.content-disc a {
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  .footer {
+    padding: 50px;
+    margin: auto;
+    background-color: #1b1c1d;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-author,
+  .tech-used,
+  .content-disc {
+    width: 100%;
+    margin: auto;
+    text-align: left;
+  }
+}
