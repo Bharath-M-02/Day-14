@@ -181,6 +181,21 @@ nav {
   font-size: 14px;
 }
 
+@media (max-width: 700px) {
+  .poetry-poems {
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .poems {
+    margin-top: 50px;
+  }
+}
+
 .footer {
   padding: 50px;
   margin: auto;
